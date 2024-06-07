@@ -719,3 +719,23 @@ nav > div a.nav-item.nav-link:focus
     border-radius:0;
     transition:background 0.20s linear;
 }
+
+.fa.fa-twitter{
+	font-family:sans-serif;
+}
+.fa.fa-twitter::before{
+	content:"𝕏";
+	font-size:1.2em;
+}
+.thumbnail {
+  margin-bottom:7px;
+}
+
+.fa-forward:before {
+      content: "\f04e";
+    }
+
+.fa-industry:before {
+      content: "\f275";
+    }
+
