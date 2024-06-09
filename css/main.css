@@ -162,7 +162,7 @@ ul.nostyle i {
   margin-top: 32px;
 }
 .navbar-header .navbar-brand {
-  padding:5px 0;
+  padding:1px 0;
 }
 .navbar-header .navbar-brand a {
   height: auto;
@@ -170,7 +170,7 @@ ul.nostyle i {
  
 }
 #top-header {
-  padding: 10px 0;
+  padding: 10px 150px;
 }
 
 @media only screen and (min-width: 768px) {
