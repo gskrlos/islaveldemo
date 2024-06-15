@@ -28,8 +28,8 @@
 
 </head><!--/head-->
 
-<body id="home" class="homepage" onclick="PlayAudio()">
-
+<!--<body id="home" class="homepage" onclick="PlayAudio()">-->
+<body id="home" class="homepage">
 
     <header id="top-header" class="navbar-inverse navbar-fixed-top">
         <div class="container">
@@ -122,11 +122,22 @@
             </div><!--/.item-->
 
         </div><!--/.owl-carousel-->
-        <audio id="audio1" controls loop>
+        <!--<audio id="audio1" controls loop>
             <source src="audio/cancion.mp3" type="audio/mpeg">
             Este navegador no acepta formatos de audio
         </audio>
-    </section><!--/#main-slider-->
+    </section>-->
+     <audio id="myAudio" 
+            autoplay preload="auto" 
+           onended="disableControls()">
+        <source src="audio/cancion.mp3"
+                type="audio/mp3">
+        Your browser does not support the audio tag.
+    </audio>
+    <p id="message" 
+       style="display: none;">          
+      </p>
+    <!--/#main-slider-->
 
     <section id="about" style="padding: 50px;!important">
         <div class="container">
@@ -137,7 +148,7 @@
             </div>
 
             <div class="row">
-                <div class="col-sm-6 wow fadeInRight">
+                <div class="col-sm-12 wow fadeInRight">
                     <div class="col-xs-12 " style=" padding-bottom: 15px;">
                         <nav>
                             <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
@@ -161,7 +172,7 @@
                     <br />
                 </div>
                 <br>
-                <div class="col-sm-6 wow fadeInLeft" style="padding-top:15px;">
+                <div class="panel-heading" style="padding-top:15px; display:flex; width:100%; justify-content: center!important;">
                     <img class="img-responsive" src="images/feature-2_2.png" alt="">
                 </div>
             </div>
@@ -182,7 +193,7 @@
             <div class="row">
                 <div class="col-sm-3 col-md-2 col-lg-2 wow fadeInUp" data-wow-duration="50ms" data-wow-delay="0ms">
                 </div>
-                <div class="col-sm-6 col-md-8 col-lg-8 wow fadeInUp" data-wow-duration="50ms" data-wow-delay="0ms">
+                <div class="col-sm-6 col-md-8 col-lg-8 wow fadeInUp" data-wow-duration="20ms" data-wow-delay="0ms">
                     <div class="panel-group" id="accordion">
                         <div class="panel panel-default">
                             <div class="panel-heading" style="display:flex; width:100%; justify-content: center!important;">
@@ -200,9 +211,7 @@
                                         </div>
                                         <div class="media-body">
                                             <p>
-                                                Lixophaga diatraeae (Towns.) se utiliza en el control de los barrenadores Diatraea
-                                                saccharalis (Fab.), Diatraea lineolata (Walker) y Diatraea sp. en caña de azúcar, arroz y
-                                                maíz.
+                                                Lixophaga diatraeae (Towns.) es utilizada en el control de barrenadores de la caña de azúcar, es un producto basado en la mosca cubana, con presentaciones de 10 o 20 individuos por bolsita.
                                             </p>
                                         </div>
                                     </div>
@@ -225,8 +234,7 @@
                                         </div>
                                         <div class="media-body">
                                             <p>
-                                                Tetrastichus howardi (Olliff) es un efectivo parásito de crisálida o pupas de barrenadores,
-                                                que son plagas comunes de las poáceas (maíz, caña de azúcar, arroz, cebada, etc.)
+                                                es un producto a base del parasitoide pupal  Tetrastichus howardi, es un efectivo parasito de crisálidas o pupas de taladradores (barrenadores), que son plagas comunes de las poáceas (maíz, caña de azúcar, cebada, etc.)
                                             </p>
                                         </div>
                                     </div>
@@ -250,8 +258,7 @@
                                         </div>
                                         <div class="media-body">
                                             <p>
-                                                Es un producto obtenido a partir de cepas seleccionadas del género Trichoderma con una
-                                                concentración aproximada de 1 x 109 UFC/g.
+                                                Fungicida biológico, estimulante del crecimiento vegetal y biorremediador de suelos, es un producto obtenido a partir de cepas seleccionadas del género Trichoderma con una concentración igual o superior a 1 x 109  UFC/g.
                                             </p>
                                         </div>
                                     </div>
@@ -260,7 +267,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-3 col-md-2 col-lg-2 wow fadeInUp" data-wow-duration="100ms" data-wow-delay="0ms">
+                <div class="col-sm-3 col-md-2 col-lg-2 wow fadeInUp" data-wow-duration="200ms" data-wow-delay="0ms">
                 </div>
             </div>
         </div>
@@ -426,7 +433,7 @@
                         <div class="carousel-inner" role="listbox">
                             <div class="item active">
                                 <p><img class="img-circle img-thumbnail" src="images/testimonial/01.jpg" alt=""></p>
-                                <h4>Oscar Velasco</h4>
+                                <h4></h4>
                                 <small>Director General</small>
                                 <p>Uno de nuestros objetivos es satisfacer a nuestros clientes con productos 100% Naturales</p>
                             </div>
@@ -454,11 +461,6 @@
             </div>
         </div>
     </section><!--/#testimonial-->
-
-
-
-
-
 
     <section id="contact-area">
         <div class="container">
@@ -507,7 +509,7 @@
                                     <i class="fa fa-map-marker fa-2x"></i>
                                 </div>
                                 <h4 class="text-dark">Dirección</h4>
-                                <p class="mb-0 text-white">Calzada Oaxaca 2309 A Col. Francisco I. Madera C.P. 74290 Atlixco, Puebla.</p>
+                                <p class="mb-0 text-white">Calzada Oaxaca 2309 A Col. Francisco I. Madero C.P. 74290 Atlixco, Puebla.</p>
                                 <div class="pull-up">
                                     <i class="fa fa-phone fa-2x" style="color: #72C05B;"></i>
                                 </div>
@@ -543,6 +545,23 @@
         function PlayAudio() {
             document.getElementById('audio1').play();
         }
+        let audioPlayed = false;
+        function disableControls() {
+            let audio = 
+                document.getElementById('myAudio');
+            let message = 
+                document.getElementById('message');
+
+            if (!audioPlayed) {
+                audio.controls = false;
+                audioPlayed = true;
+                message.style.display = 'block';
+            }
+            audio.removeEventListener(
+              'ended', disableControls
+            );
+        }
+  </script>
     </script>
     <footer id="footer">
         <div class="container">
