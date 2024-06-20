@@ -739,3 +739,19 @@ nav > div a.nav-item.nav-link:focus
       content: "\f275";
     }
 
+.a-li{
+float: left; 
+background: transparent; 
+color: #9d9d9d; 
+padding-top: 15px; 
+padding-bottom: 15px; 
+line-height: 20px; 
+position: relative;
+display: block;
+padding: 15px 15px;
+}
+
+.a-li:hover
+{
+color: white;
+}
