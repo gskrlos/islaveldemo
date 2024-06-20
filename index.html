@@ -25,11 +25,11 @@
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
-
+  
 </head><!--/head-->
 
 <!--<body id="home" class="homepage" onclick="PlayAudio()">-->
-<body id="home" class="homepage">
+<body id="home" class="homepage" onclick="PlayAudio()">
 
     <header id="top-header" class="navbar-inverse navbar-fixed-top">
         <div class="container">
@@ -127,15 +127,13 @@
             Este navegador no acepta formatos de audio
         </audio>
     </section>-->
-     <audio id="myAudio" 
-            autoplay preload="auto" 
-           onended="disableControls()">
-        <source src="audio/cancion.mp3"
-                type="audio/mp3">
+     <audio id="myAudio" autoplay preload="auto" onended="disableControls()">
+        <source src="audio/cancion.mp3" type="audio/mp3">
         Your browser does not support the audio tag.
     </audio>
     <p id="message" 
-       style="display: none;">          
+       style="display: none;" >   
+                    
       </p>
     <!--/#main-slider-->
 
@@ -207,6 +205,8 @@
                                 <div class="panel-body">
                                     <div class="media service-box wow fadeInRight" style="margin-top: 15px;!important">
                                         <div class="pull-left">
+                                         
+                                            <!--<a href="lixovel.html" class="fa fa-leaf"></a>-->
                                             <i class="fa fa-leaf"></i>
                                         </div>
                                         <div class="media-body">
@@ -542,10 +542,18 @@
 
     </section><!--/#bottom-->
     <script>
-        function PlayAudio() {
-            document.getElementById('audio1').play();
-        }
         let audioPlayed = false;
+        
+        function PlayAudio() {
+            if(audioPlayed == false){
+                  document.getElementById('myAudio').play();
+                  audioPlayed = true;
+            }
+          
+            
+            disableControls();
+        }
+        
         function disableControls() {
             let audio = 
                 document.getElementById('myAudio');
