@@ -45,7 +45,7 @@
                 <!-- logo -->
                 <div class="navbar-brand">
                     <a class="smooth-scroll" data-section="#home" href="#home">
-                        <img src="images/logo10.png" alt="">
+                        <img src="images/logo12.png" alt="">
                     </a>
                 </div>
                 <!-- /logo -->
@@ -148,8 +148,8 @@
             <div class="row">
                 <div class="col-sm-12 wow fadeInRight">
                     <div class="col-xs-12 " style=" padding-bottom: 15px;">
-                        <nav>
-                            <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+                        <nav style="display: flex; flex-direction: row-reverse;justify-content: flex-end;">
+                            <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist" style="display: flex; flex-direction: row-reverse;justify-content: flex-end;">
                                 <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Origen</a>
                                 <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Misión</a>
                                 <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Visión</a>
@@ -206,7 +206,23 @@
                                     <div class="media service-box wow fadeInRight" style="margin-top: 15px;!important">
                                         <div class="pull-left">
                                          
-                                            <a href="lixovel.html" class="fa fa-leaf"></a>
+                                            <a href="lixovel.html" class="fa fa-leaf" onclick="ocultarseeciones()"></a>
+                                            <div class="boton-modal">
+                                                <label for="btn-modal" class="fa fa-leaf">
+                                                    Abrir Modal
+                                                </label>
+                                            </div>
+                                             <input type="checkbox" id="btn-modal">
+                                            <div class="container-modal">
+                                                <div class="content-modal">
+                                                    <h2>¡Bienvenido!</h2>
+                                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur, nostrum!</p>
+                                                    <div class="btn-cerrar">
+                                                        <label for="btn-modal">Cerrar</label>
+                                                    </div>
+                                                </div>
+                                                <label for="btn-modal" class="cerrar-modal"></label>
+                                            </div>
                                             <!--<i class="fa fa-leaf"></i>-->
                                         </div>
                                         <div class="media-body">
@@ -569,8 +585,8 @@
               'ended', disableControls
             );
         }
-  </script>
     </script>
+    
     <footer id="footer">
         <div class="container">
             <div class="row">
