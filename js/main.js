@@ -181,3 +181,13 @@ jQuery(function($) {'use strict';
 
 
 });
+
+function ShowHide(id){
+	var container = document.getElementById("container-prod"+id)	
+	if(container.style.visibility=="hidden"){
+		container.style.visibility="visible"
+	}else{
+		container.style.visibility="hidden"
+		container.toggle();
+	}
+}

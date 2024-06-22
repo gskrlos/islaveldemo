@@ -808,7 +808,7 @@ body{
     width: 100%;
     max-width: 450px;
     padding: 20px;
-    background-color: #fff;
+    background-color: #ddd;
     border-radius: 4px;
 }
 .content-modal h2{
@@ -858,7 +858,7 @@ body{
     font: 15.0px 'trebuchet MS', 'lucida sans';
     padding: 0;
     margin-bottom: 4em;
-    text-shadow: 0 1px 0 rgba(255,255,255,.5);
+    text-shadow: 0 1px 0 rgba(249, 249, 249, 0.5);
 }
 
 #lista2 ol {
@@ -871,7 +871,7 @@ body{
     padding: .4em .4em .4em 2em;
     *padding: .4em;
     margin: .5em 0;
-    background: #ddd;
+    background: #ffffff;
     color: #444;
     text-decoration: none;
     border-radius: .3em;
@@ -879,7 +879,7 @@ body{
 }
 
 #lista2 li:hover{
-    background: #eee;
+    background: #ffffff;
 }
 
 #lista2 li:hover:before{
@@ -902,4 +902,8 @@ body{
     font-weight: bold;
     border-radius: 2em;
     transition: all .3s ease-out;
+}
+
+.container-prod{
+  text-align: justify;
 }
