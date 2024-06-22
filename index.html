@@ -217,7 +217,7 @@
                                                 <div class="content-modal" style="padding:5px;">
                                                     <div class="section-header">
                                                     
-                                                    <div id="carousel-testimonial" class="carousel slide text-center" data-ride="carousel" style="height: 400px;">
+                                                    <div id="carousel-productos" class="carousel slide text-center" data-ride="carousel" data-bs-interval="false" style="height: 400px;">
                         <!-- Wrapper for slides -->
                                                     <div class="carousel-inner" role="listbox" style="height:455px;">
                                                         <div class="item active" style="width:430px; padding-left: 16px; padding-top: 14px;">
@@ -638,6 +638,14 @@
               'ended', disableControls
             );
         }
+
+        $(document).ready(function(){
+    // Event for pushed the video
+    $('#carousel-productos').carousel({
+        pause: true,
+        interval: true
+    });
+});
     </script>
     
     <footer id="footer">
