@@ -768,7 +768,7 @@ body{
 }
 /*:::Boton-Modal:::*/
 .boton-modal{
-    padding: 40px;
+    padding: 5px;
     background-color: #fff;
 }
 .boton-modal label{
@@ -855,7 +855,7 @@ body{
     counter-reset: li; 
     list-style: none; 
     *list-style: decimal; 
-    font: 14.5px 'trebuchet MS', 'lucida sans';
+    font: 15.0px 'trebuchet MS', 'lucida sans';
     padding: 0;
     margin-bottom: 4em;
     text-shadow: 0 1px 0 rgba(255,255,255,.5);
@@ -898,7 +898,7 @@ body{
     width: 2em;
     line-height: 2em;
     border: .3em solid #fff;
-    text-align: left!important;
+    text-align: center!important;
     font-weight: bold;
     border-radius: 2em;
     transition: all .3s ease-out;
