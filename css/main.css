@@ -750,6 +750,8 @@ line-height: 20px;
 position: relative;
 display: block;
 padding: 15px 15px;
+text-align: -webkit-match-parent;
+list-style: none;
 }
 
 .a-li:hover
@@ -971,3 +973,4 @@ body{
   font-size: 16px;
   text-align: justify;
 }
+
