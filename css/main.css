@@ -196,14 +196,14 @@ ul.nostyle i {
     -webkit-box-shadow: none;
     background-clip: inherit;
   }
-  #main-menu.navbar-default .dropdown-menu > li {
+  #main-menu.navbar-default .dropdown-menu > li{
     border-left: 3px solid transparent;
     margin-left: -20px;
     padding-left: 17px;
     -webit-transition: border-color 400ms;
     transition: border-color 400ms;
   }
-  #main-menu.navbar-default .dropdown-menu > li > a {
+  #main-menu.navbar-default .dropdown-menu > li>a{
     border-top: 1px solid #404455;
     padding: 15px 0;
     color: #eeeeee;
