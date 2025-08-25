@@ -97,6 +97,21 @@ hr {
 .btn.btn-primary:focus {
   background: #72C05B;
 }
+btn.btn-valores {
+  background: gray;
+  color: #262f32 !important;
+  border-color: #72C05B;
+  clear: both;
+  font-size: 22px!important;
+  line-height: 28px;
+  text-align: center;
+  font-weight: 300;
+}
+.btn.btn-primary:hover,
+.btn.btn-primary:focus {
+  background: white;
+}
+
 .column-title {
   margin-top: 0;
   padding-bottom: 15px;
@@ -711,7 +726,7 @@ nav > div a.nav-item.nav-link.active:after
     font-size: 16px;
 }
 
-nav > div a.nav-item.nav-link:hover{ background-color:#72C05B; },
+nav > div a.nav-item.nav-link:hover{ background-color:#72C05B; }
 nav > div a.nav-item.nav-link:focus
 {
   border: none;
@@ -857,7 +872,7 @@ body{
 #lista2 {
     counter-reset: li; 
     list-style: none; 
-    *list-style: decimal; 
+    list-style: decimal; 
     font: 16.0px 'open Sans', 'lucida sans';
     padding: 0;
     margin-bottom: 1em;
@@ -872,7 +887,7 @@ body{
     position: relative;
     display: block;
     padding: .4em .4em .4em 2em;
-    *padding: .4em;
+    padding: .4em;
     margin: .5em 0;
     background: #ffffff;
     color: #64686d;
@@ -917,7 +932,7 @@ body{
 #lista3 {
   counter-reset: li; 
   list-style: none; 
-  *list-style: decimal; 
+  list-style: decimal; 
   font: 16.0px 'open Sans', 'lucida sans';
   color: #64686d;
   padding: 0;
@@ -933,7 +948,7 @@ body{
   position: relative;
   display: block;
   padding: .4em .4em .4em 2em;
-  *padding: .4em;
+  padding: .4em;
   margin: .5em 0;
   background: #ffffff;
   color: #64686d;
