@@ -887,7 +887,7 @@ body{
     position: relative;
     display: block;
     padding: .4em .4em .4em 2em;
-    padding: .4em;
+    padding: .8em;
     margin: .5em 0;
     background: #ffffff;
     color: #64686d;
@@ -948,7 +948,7 @@ body{
   position: relative;
   display: block;
   padding: .4em .4em .4em 2em;
-  padding: .4em;
+  padding: .8em;
   margin: .5em 0;
   background: #ffffff;
   color: #64686d;
@@ -973,8 +973,8 @@ body{
   top: 50%;
   margin-top: -1.3em;
   background: #72C05B;
-  height: 2em;
-  width: 2em;
+  height: 1.5em;
+  width: 1.5em;
   line-height: 2em;
   border: .3em solid #fff;
   text-align: center!important;
