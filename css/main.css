@@ -948,7 +948,7 @@ body{
   position: relative;
   display: block;
   padding: .4em .4em .4em 2em;
-  padding: .8em;
+  padding: .9em;
   margin: .5em 0;
   background: #ffffff;
   color: #64686d;
@@ -970,11 +970,11 @@ body{
   counter-increment: li;
   position: absolute; 
   left: -1.3em;
-  top: 50%;
+  top: 60%;
   margin-top: -1.3em;
   background: #72C05B;
-  height: 1.5em;
-  width: 1.5em;
+  height: 1.2em;
+  width: 1.2em;
   line-height: 2em;
   border: .3em solid #fff;
   text-align: center!important;
